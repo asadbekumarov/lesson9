@@ -1,0 +1,80 @@
+.build__section {
+  background-color: #012f34;
+  position: relative;
+}
+.build__section__content {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  display: flex;
+  h2 {
+    padding-top: 54px;
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 100%;
+    position: relative;
+    color: #fff;
+  }
+}
+.build__title {
+  display: flex;
+}
+.build__content {
+  padding-top: 70px;
+  display: flex;
+  gap: 23px;
+  img {
+    height: 72px;
+  }
+  h5 {
+    padding-bottom: 16px;
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #f67e7e;
+  }
+  P {
+    font-family: Livvic;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #fff;
+  }
+  .build__disk {
+    position: absolute;
+    height: 244px;
+    right: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 244px;
+  }
+}
+
+// respansive
+
+@media (max-width: 1035px) {
+  .build__disk {
+    top: 0;
+  }
+  .build__section__content {
+    display: block;
+  }
+}
+@media (max-width: 490px) {
+  .build__section__content {
+    h2 {
+      font-family: Livvic;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+  .build__content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
