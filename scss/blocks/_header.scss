@@ -59,3 +59,8 @@
 
 // respansive
 
+@media (max-widht: 620px) {
+  .header__hamburger {
+    display: flex !important;
+  }
+}

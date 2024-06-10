@@ -42,18 +42,25 @@
   color: #fff;
   opacity: 60%;
 }
-
-.ll {
+.mobile__planshet {
   display: flex;
   gap: 125px;
 }
-.oo {
-  background-color: red;
-  width: 1110px;
-  height: 200px;
-}
-.box{
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
+
+@media (max-width: 800px) {
+  .footer__section__content {
+    flex-direction: column;
+  }
+  .mobile__planshet {
+    justify-content: space-between;
+  }
+  .mobile__planshet2 {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__section__copyright{
+    padding-top: 0;
+  }
 }
