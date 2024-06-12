@@ -53,6 +53,7 @@
   }
   .mobile__planshet {
     justify-content: space-between;
+    align-items: center;
   }
   .mobile__planshet2 {
     padding-top: 32px;
@@ -60,7 +61,22 @@
     justify-content: space-between;
     align-items: center;
   }
-  .footer__section__copyright{
+  .footer__section__copyright {
     padding-top: 0;
+  }
+}
+
+@media (max-width: 625px) {
+  .footer__section__content {
+    flex-direction: column;
+    display: flex;
+  }
+  .mobile__planshet {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile__planshet2 {
+    display: flex;
+    flex-direction: column;
   }
 }

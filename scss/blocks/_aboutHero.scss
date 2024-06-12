@@ -1,5 +1,11 @@
 .hero__section {
   background-color: #014e56;
+  position: relative;
+  .about-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+  }
 }
 .hero__section__content {
   position: relative;
@@ -9,7 +15,7 @@
   padding-bottom: 84px;
   h1 {
     font-family: Livvic;
-    font-size: 100px;
+    font-size: 64px;
     font-weight: 700;
     line-height: 100px;
     width: 100%;
@@ -29,15 +35,16 @@
     color: #f67e7e;
   }
   .line {
-    padding-bottom: 79px;
+    padding-bottom: 40px;
   }
   p {
-    padding-bottom: 255px;
+    padding-bottom: 120px;
     font-family: Livvic;
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
-    width: 735px;
+    // width: 735px;
+    width: 100%;
     color: #fff;
   }
   .disk__bottom {
@@ -75,7 +82,7 @@
       font-size: 40px;
       font-weight: 700;
       line-height: 40px;
-      width: 327px;
+      width: 100%;
       span {
         font-size: 40px;
         font-weight: 700;
@@ -86,7 +93,13 @@
       font-size: 15px;
       font-weight: 600;
       line-height: 28px;
-      width: 327px;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .hero__section__content {
+    h1 {
+      width: 100%;
     }
   }
 }

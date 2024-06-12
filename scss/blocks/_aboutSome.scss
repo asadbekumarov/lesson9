@@ -1,0 +1,45 @@
+.some__section {
+  background-color: #012f34;
+  position: relative;
+  .some__disk {
+    position: absolute;
+  }
+}
+.some__section__content {
+  h2 {
+    padding-top: 140px;
+    padding-bottom: 64px;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #fff;
+  }
+  .some__section__content__logo {
+    padding-bottom: 140px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+}
+
+// respansive
+
+@media (max-width: 955px) {
+  .some__section__content__logo {
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
+.some__section__content__logo {
+  flex-wrap: wrap;
+}
+@media (max-width: 390px) {
+  .some__section{
+    .some__disk{
+      display: none;
+    }
+  }
+}
